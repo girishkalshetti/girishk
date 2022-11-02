@@ -1,0 +1,105 @@
+.cardnew{
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    display: flex;
+    /* padding: 45px 0px 0px 1000px; */
+}
+.containercard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.containercard .servicebox{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.containercard .servicebox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.containercard .servicebox:hover .icon {
+    top:30px;
+    left:calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.containercard .servicebox .uil{
+    font-size: 5em;
+    color: white;
+}
+.containercard .servicebox:hover .uil{
+    font-size: 2em;
+}
+.containercard .servicebox .wrapbox h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 99px;
+    color: azure;
+    z-index: 2;
+}
+.containercard .servicebox:hover .wrapbox h2{
+    display: none;
+}
+.containercard .servicebox .content{
+    position: relative;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.containercard .servicebox .content h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.containercard .servicebox:hover .content{
+    transform: scale(1);
+}
+.containercard .servicebox .content p{
+    line-height: 1.5em;
+    font-family: 300;
+}
+@media (max-width: 720px){
+
+    .containercard{
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 49px;
+    }
+}
+.np{
+    font-size: 78px;
+    font-weight: bolder;
+    color: green;
+}
